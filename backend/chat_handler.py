@@ -373,6 +373,8 @@ chat = model.start_chat(history=messages)
 
 
 def get_gemini_response(prompt):
+    thinking = []
+
     query = prompt
     messages.append({'role': 'user', 'parts': query})
 
@@ -391,11 +393,12 @@ def get_gemini_response(prompt):
             messages.append({'role': 'model', 'parts': parsed_json['content']})
 
             if parsed_json.get('step') != 'result':
-                print("         🧠:", parsed_json.get("content"))
+                thinking.append(f"🧠 {parsed_json.get("content")}")
+                # print(f"🧠 {parsed_json.get("content")}")
                 continue
 
             result = parsed_json.get("content")
-            return result
+            return thinking, result
             # break
 
         except json.JSONDecoderError as e:
