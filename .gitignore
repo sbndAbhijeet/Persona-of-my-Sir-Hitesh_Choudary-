@@ -1,3 +1,13 @@
+# Ignore all .log files
+*.log
 
+# Ignore folder
 .venv
+__pycache__/
+
+# Ignore environment files
 .env
+
+# Ignore build folders
+build/
+dist/
