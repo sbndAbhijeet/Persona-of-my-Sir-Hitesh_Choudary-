@@ -3,7 +3,7 @@ A Conversational Chatbot using Streamlit & Gemini API
 
 Overview
 
-    Chat with Hitesh is an interactive AI chatbot inspired by Hitesh Choudhary's (Chai aur Code) unique teaching style and persona. Built using Streamlit and Google's Gemini API, this project lets users chat in Hinglish and get responses that reflect Hitesh's motivational, practical, and relatable coding advice.
+Chat with Hitesh is an interactive AI chatbot inspired by Hitesh Choudhary's (Chai aur Code) unique teaching style and persona. Built using Streamlit and Google's Gemini API, this project lets users chat in Hinglish and get responses that reflect Hitesh's motivational, practical, and relatable coding advice.
 ---
 Tech Stack: Python, Streamlit, Gemini API
 
